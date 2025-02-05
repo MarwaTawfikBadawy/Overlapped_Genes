@@ -9,13 +9,6 @@ library(svglite)
 ```
 
 ```{r}
-# Read files
-ad_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Alzheimer_genes.csv", header = TRUE, stringsAsFactors = FALSE)
-pd_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Parkinson_genes.csv", header = TRUE, stringsAsFactors = FALSE)
-dementia_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Dementia_genes.csv", header = TRUE, stringsAsFactors = FALSE)
-```
-
-```{r}
 # Create data
 overlap_counts <- data.frame(
   Category = c("AD & PD", "AD & Dementia", "PD & Dementia", "All Three", "Unique AD", "Unique PD", "Unique Dementia"),
