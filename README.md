@@ -1,24 +1,30 @@
 # Overlapped_Genes
 This repository includes the analysis of the overlapped genes across Alzheimer's Disease, Parkinson's Disease, and Dementia
 
+```{r}
 library(ggplot2)
 library(scales)
 library(Cairo)
 library(svglite)
+```
 
-
-Read files
+```{r}
+# Read files
 ad_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Alzheimer_genes.csv", header = TRUE, stringsAsFactors = FALSE)
 pd_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Parkinson_genes.csv", header = TRUE, stringsAsFactors = FALSE)
 dementia_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Dementia_genes.csv", header = TRUE, stringsAsFactors = FALSE)
+```
 
-Create data
+```{r}
+# Create data
 overlap_counts <- data.frame(
   Category = c("AD & PD", "AD & Dementia", "PD & Dementia", "All Three", "Unique AD", "Unique PD", "Unique Dementia"),
   Count = c(3768, 6102, 4130, 3274, 2660, 641, 3756)
 )
+```
 
-Define formal high-quality colors
+```{r}
+# Define formal high-quality colors
 custom_colors <- c(
   "AD & PD" = "#1b9e77",       # Teal Green
   "AD & Dementia" = "#d95f02", # Deep Orange
@@ -28,9 +34,10 @@ custom_colors <- c(
   "Unique PD" = "#e6ab02",     # Gold
   "Unique Dementia" = "#a6761d" # Brown
 )
+```
 
-
-Modify the ggplot
+```{r}
+# Modify the ggplot
 p <- ggplot(overlap_counts, aes(x = reorder(Category, -Count), y = Count, fill = Category)) +
   geom_bar(stat = "identity", color = "white", size = 1.2) +
   geom_text(aes(label = Count), vjust = -0.5, size = 5, fontface = "bold", color = "black") +
@@ -48,10 +55,12 @@ p <- ggplot(overlap_counts, aes(x = reorder(Category, -Count), y = Count, fill =
     panel.grid.major.y = element_line(linetype = "dashed", color = "gray"),
     legend.position = "none"
   )
+```
 
-Save the plot
+```{r}
+# Save the plot
 ggsave("gene_overlap_chart.svg", plot = p, width = 12, height = 7, dpi = 300)
 ggsave("gene_overlap_chart.png", plot = p, width = 12, height = 7, dpi = 300)
-
+```
 Display the plot
 print(p)
