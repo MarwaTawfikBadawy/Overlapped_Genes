@@ -1,6 +1,6 @@
 # Overlapped_Genes
 This repository includes the analysis of the overlapped genes across Alzheimer's Disease, Parkinson's Disease, and Dementia.
-Here we are also 
+Here we are also summarizing 
 
 
 ```{r}
