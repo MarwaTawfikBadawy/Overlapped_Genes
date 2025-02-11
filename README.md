@@ -1,5 +1,5 @@
 # Overlapped_Genes
-Analysis of the overlapped genes across Alzheimer's, Parkinson's, and Dementia
+Analysis of the overlapped genes across Alzheimer's, Parkinson's, and Dementia Diseases
 
 Here we are summarizing the overlapping genes and pathways detected in the three neurodegenerative diseases.
 
