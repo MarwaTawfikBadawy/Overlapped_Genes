@@ -1,5 +1,5 @@
 # Overlapped_Genes
-This repository includes the analysis of the overlapped genes across 
+
 
 Here we are also summarizing the overlapping genes and pathways detected in the three neurodegenerative diseases.
 
