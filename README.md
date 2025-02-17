@@ -3,7 +3,7 @@ Analysis of the overlapped genes across Alzheimer's, Parkinson's, and Dementia D
 
 Here we are summarizing the overlapping genes and pathways detected in the three neurodegenerative diseases.
 
---
+---
 
 ```{r}
 library(ggplot2)
