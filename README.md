@@ -21,7 +21,6 @@ overlap_counts <- data.frame(
 )
 ```
 
-
 ```{r}
 # Define formal high-quality colors
 custom_colors <- c(
