@@ -4,7 +4,6 @@ library(Cairo)
 library(svglite)
 
 
-
 # Read files
 ad_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Alzheimer_genes.csv", header = TRUE, stringsAsFactors = FALSE)
 pd_genes <- read.csv("/Users/mahamarwatawfik/Documents/AD_PD_Dementia/Parkinson_genes.csv", header = TRUE, stringsAsFactors = FALSE)
