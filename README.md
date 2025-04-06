@@ -6,7 +6,6 @@ Here we are summarizing the overlapping genes and pathways detected in the three
 ---
 
 
-
 ```{r}
 library(ggplot2)
 library(scales)
